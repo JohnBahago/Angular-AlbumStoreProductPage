@@ -1,6 +1,7 @@
 import { browser, element, by } from 'protractor';
 
 export class AlbumStorePage {
+  static json: number;
   navigateTo() {
     return browser.get('/');
   }
