@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 import { ProductPageComponent } from './product-page/product-page.component';
 import { ProductDescriptionComponentComponent } from './components/product-description-component/product-description-component.component';
 import { ProductService } from './services/product.service';
+import { ProductDescriptionComponent } from './product-description/product-description.component';
 
 
 providers: [ProductService]
@@ -16,7 +17,8 @@ providers: [ProductService]
   declarations: [
     AppComponent,
     ProductPageComponent,
-    ProductDescriptionComponentComponent
+    ProductDescriptionComponentComponent,
+    ProductDescriptionComponent
   ],
   imports: [
     BrowserModule,
