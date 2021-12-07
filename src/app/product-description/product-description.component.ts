@@ -11,7 +11,7 @@ albumInfo;
   constructor(private _ProductService: ProductService) { }
 
   ngOnInit() {
-    this._productService.getAlbum(1).subscribe(Response => this.albumInfo = Response)
+    this._ProductService.getAlbum(1).subscribe(Response => this.albumInfo = Response)
   }
 
 }
