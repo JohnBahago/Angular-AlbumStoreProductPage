@@ -6,6 +6,7 @@ import { AlbumStorePage } from '../../e2e/app.po';
 import 'rxjs/add/operator/map';
 
 import { Observable } from 'rxjs/Observable';
+import { Album } from './album';
   @Injectable()
   
 export class ProductService {
