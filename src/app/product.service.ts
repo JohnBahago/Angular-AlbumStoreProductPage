@@ -7,6 +7,7 @@ import { AlbumStorePage } from '../../e2e/app.po';
   
 export class ProductService {
 
+  private _albumUrl = '../assets/album.json'
   constructor(private _http: Http) { 
 
   }

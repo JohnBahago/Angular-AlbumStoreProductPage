@@ -14,8 +14,7 @@ import { ProductDescriptionComponent } from './product-description/product-descr
   declarations: [
     AppComponent,
     ProductPageComponent,
-    ProductDescriptionComponentComponent,
-    ProductDescriptionComponent
+        ProductDescriptionComponent
   ],
   imports: [
     BrowserModule,
