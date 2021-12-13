@@ -12,7 +12,7 @@ import { Product } from './product';
   @Injectable()
   
 export class ProductService {
-  private _productUrl = '../assets/products.json'
+  private _productsUrl = '../assets/products.json'
 
   private _albumUrl = '../assets/album.json';
 
@@ -20,14 +20,14 @@ export class ProductService {
  
   getAlbum(id: Number):  Observable<Album> {
     
-    return  this._http.get(this._albumUrl).map((response)=> <Album> response.json());
-    getProducts() {
-      return this._http.get(_productsUrl);
+    return  this._http.get(this._albumUrl).map((response)=> <Album> response.json());}
+    getProducts(): Observable <Product[]> {
+      return this._http.get(this._productsUrl).map(Response => <Product[]>Response.json());
     };
   }
 
 
-}
+
 
 
 
