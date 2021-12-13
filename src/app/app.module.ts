@@ -9,10 +9,11 @@ import { ProductDescriptionComponent } from './product-description/product-descr
 import { ProductTracklistingComponent } from './product-tracklisting/product-tracklisting.component';
 import { ProductListComponent } from './product-list/product-list.component';
 
+import {RouterModule, Routes} from '@angular/router';
 
-
-
+ appRoutes: Routes[];
 @NgModule({
+  
   declarations: [
     AppComponent,
     ProductPageComponent,
@@ -20,6 +21,7 @@ import { ProductListComponent } from './product-list/product-list.component';
         ProductTracklistingComponent,
         ProductListComponent
   ],
+ 
   imports: [
     BrowserModule,
     FormsModule,
@@ -28,4 +30,5 @@ import { ProductListComponent } from './product-list/product-list.component';
   providers: [ProductService],
   bootstrap: [AppComponent]
 })
+
 export class AppModule { }
