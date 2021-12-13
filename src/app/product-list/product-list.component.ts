@@ -8,8 +8,8 @@ import { ProductService } from 'app/product.service';
   styleUrls: ['./product-list.component.css']
 })
 export class ProductListComponent implements OnInit {
-
-  constructor() { }
+ products: product[]
+  constructor(private _ProductService: ProductService) { }
 
   ngOnInit() {
   }
